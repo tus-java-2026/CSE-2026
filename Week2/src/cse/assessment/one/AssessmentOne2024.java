@@ -6,7 +6,7 @@ public class AssessmentOne2024 {
 	static Scanner sc = new Scanner(System.in);
 	public static void main(String[] args) {
 
-		question1();
+		//question1();
 		//question2(); 
 		//question3();	
 	}

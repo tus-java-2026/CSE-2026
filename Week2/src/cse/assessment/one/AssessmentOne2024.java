@@ -7,10 +7,40 @@ public class AssessmentOne2024 {
 	
 	public static void main(String[] args) {
 
-		//question1();
+		 allowedToVote();
 		//question2(); 
 		//question3();	
 	}
+	
+	
+	private static void allowedToVote() {
+
+		int age;
+		boolean citizenship;
+
+		System.out.println("Check if you can vote: " );
+
+
+		System.out.print("Enter your age : ");
+		age = sc.nextInt();
+
+		System.out.print("Enter your citizenship(True/False): ");
+		citizenship = sc.nextBoolean();
+
+
+		if(age == 18  && citizenship)
+		{
+			System.out.println("you are elegible to vote!");
+
+		}
+		else {
+
+			System.out.println("you are not elegible to vote!");
+		}
+		sc.close();
+
+	}
+
 
 	public static void question2()
 	{
@@ -100,7 +130,7 @@ public static void myChar(char inputChar) {
 			System.out.println("You entered a consonant");
 		}
 	} else {
-		System.out.println("You entered a special character");
+		System.out.println("You entered a special  character");
 	}
 
 }

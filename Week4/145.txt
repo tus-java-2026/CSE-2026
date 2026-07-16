@@ -1,0 +1,124 @@
+public class AssessmentOne2026 {
+
+    static Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        question1();
+        //question2();
+        //question3();
+    }
+
+    public static void question1() {
+
+        System.out.print("Enter your current account balance: ");
+        double balance = scanner.nextDouble();
+        scanner.nextLine();
+
+        String accountStatus = checkAccountBalance(balance);
+        System.out.println("Your account status is: " + accountStatus);
+    }
+
+    public static String checkAccountBalance(double balance) {
+
+        if (balance >= 0) {
+            return "Active";
+        } else {
+            return "Not active - Overdrawn";
+        }
+    }
+
+    public static void question2() {
+
+        System.out.print("Enter name: ");
+        String name = scanner.nextLine();
+
+        System.out.print("Enter your year birth: ");
+        String yearOfBirth = scanner.nextLine();
+
+        System.out.print("Create password: ");
+        String password = scanner.nextLine();
+
+        System.out.print("Confirm password: ");
+        String confirmedPassword = scanner.nextLine();
+
+        boolean validPassword = isPasswordValid(password, name, yearOfBirth);
+
+     if (validPassword == false) {
+    System.out.println("Password not valid: it cannot contain name or year of birth.");
+} else if (password.equals(confirmedPassword) == false) {
+    System.out.println("Passwords do not match. Try again.");
+} else {
+    System.out.println("Password accepted.");
+}
+    }
+
+    public static boolean isPasswordValid(String password, String name, String yearOfBirth) {
+
+        String passwordLowerCase = password.toLowerCase();
+        String nameLowerCase = name.toLowerCase();
+
+        if (passwordLowerCase.contains(nameLowerCase)) {
+            return false;
+        } else if (password.contains(yearOfBirth)) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    public static void question3() {
+
+        System.out.println("Coffee Menu");
+        System.out.println("1.Espresso - 2.50");
+        System.out.println("2.Latte - 3.50");
+        System.out.println("3.Cappuccino - 4.00");
+
+        System.out.print("Enter your choice: ");
+        int choice = scanner.nextInt();
+
+        System.out.print("How many coffees would you like? ");
+        int quantity = scanner.nextInt();
+
+        double coffeePrice = getCoffeePrice(choice);
+        String coffeeItem = getCoffeeItem(choice);
+
+        if (coffeePrice == 0.0 || coffeeItem.equals("")) {
+            System.out.println("Invalid choice.");
+        } else {
+            double totalPrice = coffeePrice * quantity;
+
+            System.out.println("------INVOICE------");
+            System.out.println("Your order: " + coffeeItem + " x" + quantity);
+            System.out.println("Total price: €" + totalPrice);
+        }
+    }
+
+    public static double getCoffeePrice(int choice) {
+
+        switch (choice) {
+            case 1:
+                return 2.50;
+            case 2:
+                return 3.50;
+            case 3:
+                return 4.00;
+            default:
+                return 0.0;
+        }
+    }
+
+    public static String getCoffeeItem(int choice) {
+
+        switch (choice) {
+            case 1:
+                return "Espresso";
+            case 2:
+                return "Latte";
+            case 3:
+                return "Cappuccino";
+            default:
+                return "";
+        }
+    }
+}

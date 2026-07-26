@@ -1,0 +1,38 @@
+package Com.ait.wk5;
+
+public class PhoneTester {
+
+    public static void main(String[] args) {
+
+        // Create phone using default constructor
+        Phone samsung = new Phone();
+
+        System.out.println("Details for samsung - defaults");
+        System.out.println(samsung.getPhoneNumber());
+        System.out.println(samsung.getOwnersName());
+        System.out.println(samsung.getPrice());
+
+        System.out.println();
+
+        // Create phone using constructor with parameters
+        Phone iPhone = new Phone("999", "John", 88.50);
+
+        System.out.println("Details for iPhone");
+        System.out.println(iPhone.getPhoneNumber());
+        System.out.println(iPhone.getOwnersName());
+        System.out.println(iPhone.getPrice());
+
+        System.out.println();
+
+        // Change the values using setters
+        iPhone.setOwnersName("Tom");
+        iPhone.setPhoneNumber("110");
+        iPhone.setPrice(110.50);
+
+        System.out.println("Updated details for iPhone");
+        System.out.println(iPhone.getPhoneNumber());
+        System.out.println(iPhone.getOwnersName());
+        System.out.println(iPhone.getPrice());
+
+    }
+}

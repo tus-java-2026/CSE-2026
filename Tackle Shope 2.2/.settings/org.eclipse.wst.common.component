@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Tackle Shope 2.2">
+        <wb-resource deploy-path="/" source-path="/public"/>
+        <property name="context-root" value="Tackle_Shope_2.2"/>
+    </wb-module>
+</project-modules>

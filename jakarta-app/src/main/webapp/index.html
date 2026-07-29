@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html">
+
+<h:head>
+    <title>Jakarta Faces Demo</title>
+</h:head>
+<h:body>
+    <h1>Hello from Jakarta Faces</h1>
+    <h:form>
+        <h:outputLabel value="Enter your name: " />
+        <h:inputText value="#{helloBean.name}" />
+
+        <br/><br/>
+        <h:commandButton value="Say Hello" />
+
+        <br/><br/>
+        <h:outputText value="#{helloBean.greeting}" />
+    </h:form>
+
+</h:body>
+</html>

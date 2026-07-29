@@ -155,8 +155,7 @@ public class whileLoop {
 //
 //	int i = 1;
 //
-//	while (i <= rows) {      // (rows == 3 || cols  == 4)
-//		                       // System.print.ln("***")
+//	while (i <= rows) {      
 //
 //	    int j = 1;
 //	    
@@ -209,9 +208,7 @@ public class whileLoop {
 //	}
 //}
 
-//	private static void whileHistogram() {
-//
-//	}
+//	
 //
 //	private static void whileAverage() {
 //

@@ -4,85 +4,85 @@ import java.util.Scanner;
 
 public class BreakContinueTesting {
 	static Scanner sc = new Scanner(System.in);
-	
+
 	public static void main(String[] args) {
-	//loops();
-	//normalBreak();
-	//labelledBreak();
+		loops();
+		//normalBreak();
+		//labelledBreak();
 		//normalContinue();
-	labelledContinue();
-	
+		//labelledContinue();
+
 
 	}
 
-	private static void labelledContinue() {
+/*	private static void labelledContinue() {
 		outer: 
-			 for (int i = 1; i <= 3; i++) {
+			for (int i = 1; i <= 3; i++) {
 
-			        System.out.println("i == " + i);
+				System.out.println("i == " + i);
 
-			        for (int j = 1; j <= 5; j++) {
+				for (int j = 1; j <= 5; j++) {
 
-			            if (j == 3) {
-			            	
-			            	continue outer;
-			            	
-			            }
-			            System.out.println("\tj == " + j);
-			        } 
+					if (j == 3) {
 
-			            System.out.println();
-			        }
-			    }
+						continue outer;
+
+					}
+					System.out.println("\tj == " + j);
+				} 
+
+				System.out.println();
+			}
 	}
-		
-	
+}
 
-	//private static void normalContinue() {
-	
-		
-		//	 for (int i = 1; i <= 3; i++) {
 
-			    //    System.out.println("i == " + i);
+
+//private static void normalContinue() {
+
+
+//	 for (int i = 1; i <= 3; i++) {
+
+//    System.out.println("i == " + i);
 //
-			    //    for (int j = 1; j <= 5; j++) {
+//    for (int j = 1; j <= 5; j++) {
 
-			         //   if (j == 3) {
-			            	
-			         //   	continue ;
-			         //   }
-			             //   System.out.println("\tj == " + j);
-		//	        } 
+//   if (j == 3) {
 
-			      //      System.out.println();
-			//        }
-		//	    }
+//   	continue ;
+//   }
+//   System.out.println("\tj == " + j);
+//	        } 
+
+//      System.out.println();
+//        }
+//	    }
 //	}
 
 
-			            	
-			            
-		
-	
 
-	//private static void labelledBreak() {
-		// outer:
-	
-		// for (int i = 1; i <= 3; i++) {
 
-		  //      System.out.println("i == " + i);
 
-		    //    for (int j = 1; j <= 5; j++) {
 
-		      //      System.out.println("\tj == " + j);
 
-		       //     if (j == 2) {
-		            	
-		         //      break outer;
-	//}
+//private static void labelledBreak() {
+// outer:
 
-//	private static void normalBreak() {
-/*
+// for (int i = 1; i <= 3; i++) {
+
+//      System.out.println("i == " + i);
+
+//    for (int j = 1; j <= 5; j++) {
+
+//      System.out.println("\tj == " + j);
+
+//     if (j == 2) {
+
+//      break outer;
+//}
+
+	private static void normalBreak() {
+
 		            for (int i = 1; i <= 3; i++) {
 
 		            	System.out.println("i == " + i);
@@ -92,39 +92,38 @@ public class BreakContinueTesting {
 		            		System.out.println("\tj == " + j);
 
 		            		if (j == 2){
-	                break; {*/
-	            
+	                break; {
 
-	        
 
-	      //  System.out.println();
 
-	 
-		//	 }
-		//	 }
-//	}
-	
-//}
 
+  System.out.println();
+
+	                }
+		            		}
+		            	}
+		            	*/
 	
 
 
 
-	
 
-//	private static void loops() {
-		
-//		for (int i =1; i<=3; i++) { // inner loop 
-			
-//			System.out.println("i == " + i);
-			
-//			for (int j = 1; j <= 5; j++) {
-				
-//				System.out.println("\tj == " + j); // \t add one tab before text
-//			}
-			
-//			System.out.println();
-//  }
-//	}
-//
-//}
+
+
+
+	private static void loops() {
+
+		for (int i =1; i<=3; i++) { // inner loop 
+
+			System.out.println("i == " + i);
+
+			for (int j = 1; j <= 5; j++) {
+
+				System.out.println("\t j == " + j); // \t add one tab before text
+			}
+
+			System.out.println();
+  }
+	}
+
+	}

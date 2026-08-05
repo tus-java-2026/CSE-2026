@@ -1,6 +1,5 @@
 package IfElse_Switch;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class IfExcercises {

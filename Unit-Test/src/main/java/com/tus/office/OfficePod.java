@@ -1,9 +1,8 @@
 package com.tus.office;
 
 public class OfficePod {
-
-    private String name;
-    private boolean hasVideoConferencing;
+    private final String name;
+    private final boolean hasVideoConferencing;
     private boolean booked;
     private String bookedBy;
 
@@ -26,16 +25,21 @@ public class OfficePod {
         return booked;
     }
 
-    public String getBookedBy() {
-        return bookedBy;
-    }
-
     public void setBooked(boolean booked) {
         this.booked = booked;
+    }
+
+    public String getBookedBy() {
+        return bookedBy;
     }
 
     public void setBookedBy(String bookedBy) {
         this.bookedBy = bookedBy;
     }
 
+	public boolean isHasVideoConferencing() {
+		return hasVideoConferencing;
+	}
+
 }
+

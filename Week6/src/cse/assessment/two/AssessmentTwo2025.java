@@ -11,7 +11,7 @@ public class AssessmentTwo2025 {
 
         System.out.println("Assessment Two CSE 2025");
 
-        String choice = "y";
+        int  = "y";
 
         while (choice.equalsIgnoreCase("y")) {
 
